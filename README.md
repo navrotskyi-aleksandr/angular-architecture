@@ -1,14 +1,12 @@
 # Install
 
-## Homebew
+## nvm
 
-- > /bin/bash -c "$(curl -fsSL <https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh>)"
+- > curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 ## nodeJs
 
-Use version mentioned in package.json
-
-- > brew install node
+- > nvm install
 
 ## pnpm
 

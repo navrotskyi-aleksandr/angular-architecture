@@ -4,7 +4,7 @@
   "description": "",
   "version": "0.0.0",
   "engines": {
-    "node": ">=21.6.1",
+    "node": ">=21.6.2",
     "pnpm": ">=8.15.1"
   },
   "license": "MIT",
