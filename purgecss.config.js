@@ -1,6 +1,6 @@
 module.exports = {
   content: ['dist/**/*.js'],
-  css: ['dist/**/*.css'],
+  css: ['dist/**/styles*.css'],
   fontFace: true,
   keyframes: false,
   variables: false,
