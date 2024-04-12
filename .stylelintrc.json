@@ -1,6 +1,12 @@
 {
   "extends": ["stylelint-config-standard", "stylelint-config-standard-scss"],
   "rules": {
-    "selector-pseudo-element-no-unknown": [true, { "ignorePseudoElements": ["ng-deep"] }]
+    "selector-pseudo-element-no-unknown": [true, { "ignorePseudoElements": ["ng-deep"] }],
+    "scss/at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["tailwind"]
+      }
+    ]
   }
 }
