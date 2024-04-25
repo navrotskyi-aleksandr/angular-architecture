@@ -26,7 +26,7 @@
       "extends": ["plugin:@nx/typescript"],
       "rules": {
         "no-console": ["error"],
-        "change-detection-strategy/on-push": "warn",
+        "change-detection-strategy/on-push": "error",
         "sonarjs/no-inverted-boolean-check": "off",
         "sonarjs/no-redundant-jump": "off",
         "no-template-curly-in-string": "error",
