@@ -4,5 +4,5 @@ module.exports = {
   fontFace: true,
   keyframes: false,
   variables: false,
-  safelist: { deep: [/--purge-ignore$/], standard: [/\!|\[|%|:|\./] },
+  safelist: { deep: [/--purge-ignore$/], standard: [/\!|\[|%|:|\.|\//] },
 };
