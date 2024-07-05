@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@navrik/app-a-ui": ["libs/app-a/ui/src/index.ts"],
+      "@navrik/storybook-app-a": ["libs/storybook-app-a/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

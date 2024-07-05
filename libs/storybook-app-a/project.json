@@ -1,0 +1,9 @@
+{
+  "name": "storybook-app-a",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/storybook-app-a/src",
+  "prefix": "navrik",
+  "tags": [],
+  "projectType": "library",
+  "targets": {}
+}

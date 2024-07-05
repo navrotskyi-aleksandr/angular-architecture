@@ -38,7 +38,7 @@
       "files": ["*.ts", "*.tsx"],
       "extends": ["plugin:rxjs/recommended", "plugin:sonarjs/recommended"],
       "parserOptions": {
-        "project": ["(apps|libs)/*?/tsconfig.*?.json"]
+        "project": ["(apps|libs)/**/tsconfig.*?.json"]
       },
       "rules": {
         "rxjs/no-unsafe-takeuntil": [
