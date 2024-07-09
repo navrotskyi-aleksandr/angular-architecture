@@ -1,29 +1,31 @@
-# Install
+# Mythical FE
 
-## nvm
+## Install
+
+### nvm
 
 - > curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
-## nodeJs
+### nodeJs
 
 - > nvm install
 
-## pnpm
+### pnpm
 
 - > npm install -g pnpm
 
-### POSIX alias
+#### POSIX alias
 
 Just put the following line to your .bashrc, .zshrc, or config.fish
 
 - > alias pn=pnpm
 
-### Setup Home Path
+#### Setup Home Path
 
 - > pn setup
 - Restart terminal
 
-## nx
+### nx
 
 Install NX Globally
 
@@ -34,3 +36,11 @@ Install Local Dependencies
 - > pn install
 
 Install Nx Console IDE extension
+
+## Storybook
+
+### Generate Stories
+
+Use Nx Console or CLI
+
+- > nx generate @nx/angular:stories --name=app-a-ui
