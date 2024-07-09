@@ -5,5 +5,11 @@
   "prefix": "navrik",
   "tags": [],
   "projectType": "library",
-  "targets": {}
+  "targets": {
+    "storybook": {
+      "options": {
+        "styles": ["apps/app-a/src/scss/main.scss"]
+      }
+    }
+  }
 }
