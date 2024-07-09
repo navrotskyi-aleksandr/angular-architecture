@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/angular';
+import { argsToTemplate, type Meta, type StoryObj } from '@storybook/angular';
 import { ButtonComponent } from './button.component';
 
 import { expect } from '@storybook/jest';
@@ -15,14 +15,13 @@ export const Primary: Story = {
   args: {
     disabled: false,
   },
-};
-
-export const Heading: Story = {
-  args: {
-    disabled: false,
-  },
+  render: (args) => ({
+    template: `
+    <navrik-button ${argsToTemplate(args)}>Button</navrik-button>`,
+    props: args,
+  }),
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    expect(canvas.getByText(/button works!/gi)).toBeTruthy();
+    expect(canvas.getByText(/Button/gi)).toBeTruthy();
   },
 };

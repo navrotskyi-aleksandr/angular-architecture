@@ -8,7 +8,14 @@ module.exports = {
       current: 'currentColor',
       white: '#ffffff',
       black: '#000000',
-      replaceMeWithRealColor: { 100: '#ffffff', 900: '#000000' },
+      red: {
+        300: '#EF6373',
+        400: '#ff6464',
+        500: '#ec4f3d',
+      },
+      lime: {
+        500: '#83b135',
+      },
     },
   },
   plugins: [
