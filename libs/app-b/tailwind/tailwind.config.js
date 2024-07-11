@@ -6,7 +6,7 @@ const sharedTailwindConfig = require('../../tailwind-preset/tailwind.config');
 module.exports = {
   presets: [sharedTailwindConfig],
   theme: {
-    fontFamily: { 'sans-serif': ['"Roboto"', 'Helvetica Neue', 'sans-serif'] },
+    fontFamily: { sans: ['"Roboto"', 'Helvetica Neue', 'sans-serif'] },
     extend: {
       colors: {
         lime: {

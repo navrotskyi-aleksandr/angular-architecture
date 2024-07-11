@@ -3,10 +3,9 @@ const plugin = require('tailwindcss/plugin');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   theme: {
-    fontFamily: { 'sans-serif': ['"Montserrat"', 'arial', 'sans-serif'] },
     colors: {
       lime: {
-        500: '#000000',
+        500: 'yellow',
       },
     },
   },

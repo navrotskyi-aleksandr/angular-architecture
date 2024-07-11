@@ -7,6 +7,7 @@ module.exports = {
   presets: [sharedTailwindConfig],
   theme: {
     extend: {
+      fontFamily: { sans: ['"Montserrat"', 'arial', 'sans-serif'] },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',

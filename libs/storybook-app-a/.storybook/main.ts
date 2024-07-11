@@ -7,6 +7,11 @@ const config: StorybookConfig = {
     name: '@storybook/angular',
     options: {},
   },
+  previewHead: (head) => `${head}`,
+  core: {
+    disableTelemetry: true,
+  },
+  staticDirs: [{ from: '../../../apps/app-a/src/assets', to: '/assets' }],
 };
 
 export default config;
