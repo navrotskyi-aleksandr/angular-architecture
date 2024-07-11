@@ -1,7 +1,7 @@
 {
-  "name": "app-a-ui",
+  "name": "app-b-ui",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/app-a/ui/src",
+  "sourceRoot": "libs/app-b/ui/src",
   "prefix": "navrik",
   "tags": [],
   "projectType": "library",

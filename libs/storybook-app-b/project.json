@@ -1,16 +1,16 @@
 {
-  "name": "storybook-app-a",
+  "name": "storybook-app-b",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/storybook-app-a/src",
+  "sourceRoot": "libs/storybook-app-b/src",
   "prefix": "navrik",
   "tags": [],
   "projectType": "library",
   "targets": {
     "storybook": {
       "options": {
-        "styles": ["apps/app-a/src/scss/main.scss"]
+        "styles": ["apps/app-b/src/scss/main.scss"]
       }
     }
   },
-  "implicitDependencies": ["app-a-ui"]
+  "implicitDependencies": ["app-b-ui"]
 }

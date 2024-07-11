@@ -1,0 +1,7 @@
+{
+  "name": "app-b-tailwind",
+  "projectType": "library",
+  "sourceRoot": "libs/app-b/tailwind",
+  "targets": {},
+  "tags": []
+}

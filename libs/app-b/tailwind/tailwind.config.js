@@ -1,10 +1,20 @@
 const { createGlobPatternsForDependencies } = require('@nrwl/angular/tailwind');
 const { join } = require('path');
-const appBConfig = require('../../libs/app-b/tailwind/tailwind.config');
+const sharedTailwindConfig = require('../../tailwind-preset/tailwind.config');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  presets: [appBConfig],
+  presets: [sharedTailwindConfig],
+  theme: {
+    fontFamily: { 'sans-serif': ['"Roboto"', 'Helvetica Neue', 'sans-serif'] },
+    extend: {
+      colors: {
+        lime: {
+          500: '#EF6373',
+        },
+      },
+    },
+  },
   content: [
     join(__dirname, 'src/**/!(*.stories|*.spec).{ts,html}'),
     ...createGlobPatternsForDependencies(__dirname),

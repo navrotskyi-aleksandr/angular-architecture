@@ -4,6 +4,11 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
   theme: {
     fontFamily: { 'sans-serif': ['"Montserrat"', 'arial', 'sans-serif'] },
+    colors: {
+      lime: {
+        500: '#000000',
+      },
+    },
   },
   plugins: [
     plugin(function ({ addBase, theme }) {
