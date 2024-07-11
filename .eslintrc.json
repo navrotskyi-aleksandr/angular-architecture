@@ -31,7 +31,9 @@
         "sonarjs/no-redundant-jump": "off",
         "no-template-curly-in-string": "error",
         "eqeqeq": ["error", "smart"],
-        "max-classes-per-file": "error"
+        "max-classes-per-file": "error",
+        "@typescript-eslint/no-extra-semi": "error",
+        "no-extra-semi": "off"
       }
     },
     {
@@ -52,7 +54,10 @@
     {
       "files": ["*.js", "*.jsx"],
       "extends": ["plugin:@nx/javascript"],
-      "rules": {}
+      "rules": {
+        "@typescript-eslint/no-extra-semi": "error",
+        "no-extra-semi": "off"
+      }
     },
     {
       "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
