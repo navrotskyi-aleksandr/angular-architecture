@@ -114,6 +114,9 @@ importers:
       '@schematics/angular':
         specifier: 18.0.7
         version: 18.0.7(chokidar@3.6.0)
+      '@storybook/addon-a11y':
+        specifier: ^8.2.1
+        version: 8.2.1(storybook@8.2.1(@babel/preset-env@7.24.8(@babel/core@7.24.8)))
       '@storybook/addon-essentials':
         specifier: ^8.2.1
         version: 8.2.1(storybook@8.2.1(@babel/preset-env@7.24.8(@babel/core@7.24.8)))
@@ -2301,6 +2304,11 @@ packages:
   '@sinonjs/fake-timers@10.3.0':
     resolution: {integrity: sha512-V4BG07kuYSUkTCSBHG8G8TNhM+F19jXFWnQtzj+we8DrkpSBCee9Z3Ms8yiGer/dlmhe35/Xdgyo3/0rQKg7YA==}
 
+  '@storybook/addon-a11y@8.2.1':
+    resolution: {integrity: sha512-t+SiKtxutMJNHrv8wbpqTBlB3DSpGa4JRoW5aR4FnDMVTAOC/m0CD0+IbXzdwvxk/SmXuEe8HH7XFeShs9zQPg==}
+    peerDependencies:
+      storybook: ^8.2.1
+
   '@storybook/addon-actions@8.2.1':
     resolution: {integrity: sha512-rosuPmufr41Uojjo1ok+1r2X3/qS4WvOn6Wc8SGos9oQZwCoIbRIABOg8sz41UatPKcYHF9sJKBy8l1NXCz6LQ==}
     peerDependencies:
@@ -3338,6 +3346,10 @@ packages:
   available-typed-arrays@1.0.7:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
+
+  axe-core@4.9.1:
+    resolution: {integrity: sha512-QbUdXJVTpvUTHU7871ppZkdOLBeGUKBQWHkHrvN2V9IQWGMt61zf3B45BtzjxEJzYuj0JBjBZP/hmYS/R9pmAw==}
+    engines: {node: '>=4'}
 
   axios@1.7.2:
     resolution: {integrity: sha512-2A8QhOMrbomlDuiLeK9XibIBzuHeRcqqNOHp0Cyp5EoJ1IFDh+XZH3A6BkXtv0K4gFGCI0Y4BM7B1wOEi0Rmgw==}
@@ -11753,6 +11765,12 @@ snapshots:
     dependencies:
       '@sinonjs/commons': 3.0.1
 
+  '@storybook/addon-a11y@8.2.1(storybook@8.2.1(@babel/preset-env@7.24.8(@babel/core@7.24.8)))':
+    dependencies:
+      '@storybook/addon-highlight': 8.2.1(storybook@8.2.1(@babel/preset-env@7.24.8(@babel/core@7.24.8)))
+      axe-core: 4.9.1
+      storybook: 8.2.1(@babel/preset-env@7.24.8(@babel/core@7.24.8))
+
   '@storybook/addon-actions@8.2.1(storybook@8.2.1(@babel/preset-env@7.24.8(@babel/core@7.24.8)))':
     dependencies:
       '@storybook/global': 5.0.0
@@ -13027,6 +13045,8 @@ snapshots:
   available-typed-arrays@1.0.7:
     dependencies:
       possible-typed-array-names: 1.0.0
+
+  axe-core@4.9.1: {}
 
   axios@1.7.2:
     dependencies:

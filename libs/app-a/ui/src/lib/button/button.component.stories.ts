@@ -5,7 +5,8 @@ import { expect, within } from '@storybook/test';
 
 const meta: Meta<ButtonComponent> = {
   component: ButtonComponent,
-  title: 'ButtonComponent',
+  title: 'Base/Button',
+  tags: ['autodocs'],
 };
 export default meta;
 type Story = StoryObj<ButtonComponent>;
