@@ -11,7 +11,7 @@ const meta: Meta<ButtonComponent> = {
 export default meta;
 type Story = StoryObj<ButtonComponent>;
 
-export const Primary: Story = {
+export const primary: Story = {
   args: {
     disabled: false,
   },

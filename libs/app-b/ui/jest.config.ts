@@ -1,4 +1,3 @@
-/* eslint-disable */
 export default {
   displayName: 'app-b-ui',
   preset: '../../../jest.preset.js',
