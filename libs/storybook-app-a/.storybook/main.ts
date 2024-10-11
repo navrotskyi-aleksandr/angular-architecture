@@ -16,7 +16,7 @@ const config: StorybookConfig = {
   core: {
     disableTelemetry: true,
   },
-  docs: { autodocs: 'tag' },
+  docs: {},
   staticDirs: [{ from: '../../../apps/app-a/src/assets', to: '/assets' }],
 };
 
