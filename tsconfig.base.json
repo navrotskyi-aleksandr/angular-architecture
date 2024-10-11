@@ -19,7 +19,9 @@
       "@navrik/app-b-ui": ["libs/app-b/ui/src/index.ts"],
       "@navrik/storybook-app-a": ["libs/storybook-app-a/src/index.ts"],
       "@navrik/storybook-app-b": ["libs/storybook-app-b/src/index.ts"]
-    }
+    },
+    "isolatedModules": true,
+    "useDefineForClassFields": true
   },
   "exclude": ["node_modules", "tmp"]
 }
